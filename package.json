@@ -1,0 +1,28 @@
+{
+  "name": "vernite-my-2007",
+  "version": "1.0.0",
+  "description": "A set of tools that helps you feel like my 2007",
+  "main": "index.js",
+  "scripts": {
+    "test": "node __tests__/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isnifer/vernite-my-2007.git"
+  },
+  "keywords": [
+    "my",
+    "moy",
+    "2007",
+    "dolbebify"
+  ],
+  "authors": [
+    "Anton Kuznetsov <isnifer@gmail.com> (https://github.com/isnifer)",
+    "Anton Petrov <petrov.aap@gmail.com> (https://github.com/itsmepetrov)"
+  ],
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/isnifer/vernite-my-2007/issues"
+  },
+  "homepage": "https://github.com/isnifer/vernite-my-2007#readme"
+}
