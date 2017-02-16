@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint ./**/*.js"
+    "lint": "eslint ./**/*.js",
+    "coverage": "npm test -- --coverage",
+    "coverage:travis": "npm run coverage && cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,6 +32,7 @@
     "extends": "tipsi"
   },
   "devDependencies": {
+    "coveralls": "^2.11.16",
     "eslint": "^3.15.0",
     "eslint-config-tipsi": "^1.4.0",
     "jest": "^18.1.0"
