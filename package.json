@@ -4,7 +4,8 @@
   "description": "A set of tools that helps you feel like my 2007",
   "main": "index.js",
   "scripts": {
-    "test": "node __tests__/index.js"
+    "test": "jest",
+    "lint": "eslint ./**/*.js"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,13 @@
   "bugs": {
     "url": "https://github.com/isnifer/vernite-my-2007/issues"
   },
-  "homepage": "https://github.com/isnifer/vernite-my-2007#readme"
+  "homepage": "https://github.com/isnifer/vernite-my-2007#readme",
+  "eslintConfig": {
+    "extends": "tipsi"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-tipsi": "^1.4.0",
+    "jest": "^18.1.0"
+  }
 }
