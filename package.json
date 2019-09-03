@@ -1,13 +1,14 @@
 {
   "name": "vernite-my-2007",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of tools that helps you feel like my 2007",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint ./**/*.js",
     "coverage": "npm test -- --coverage",
-    "coverage:travis": "npm run coverage && cat ./coverage/lcov.info | coveralls"
+    "coverage:travis": "npm run coverage && cat ./coverage/lcov.info | coveralls",
+    "pub": "npm publish ./ --access public"
   },
   "repository": {
     "type": "git",
@@ -29,12 +30,12 @@
   },
   "homepage": "https://github.com/isnifer/vernite-my-2007#readme",
   "eslintConfig": {
-    "extends": "tipsi"
+    "extends": "@detools/eslint-config"
   },
   "devDependencies": {
-    "coveralls": "^2.11.16",
-    "eslint": "^3.15.0",
-    "eslint-config-tipsi": "^1.4.0",
-    "jest": "^18.1.0"
+    "@detools/eslint-config": "^1.2.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.3.0",
+    "jest": "^24.9.0"
   }
 }
